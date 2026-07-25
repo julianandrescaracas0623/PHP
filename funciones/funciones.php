@@ -17,12 +17,12 @@ function get_pokemon(){
      
      case 3:
          echo "pokefuego";
-     break;
-
+         break;
 }
-
+       
 }
 
 get_pokemon();
 
 echo "\n";
+

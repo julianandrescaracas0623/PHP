@@ -1,24 +1,23 @@
 <?php
 
-function suma($a , $b){
-
- echo "La suma de $a + $b es: " . $a + $b . "\n";
-
+function suma($a = 1, $b = 1)
+{
+    echo "La suma de $a + $b es: " . ($a + $b) . "\n";
 }
 
+suma(1, 2);
+suma(1, 9);
 
-$numeros = [1,2];
-
-suma(...$numeros);
 
 echo "\n";
 
+$arreglo1 = [1,2,3];
+$arreglo2 = [4,5,6];
 
-function suma_infinita(...$params){
+$resultado = [...$arreglo1, ...$arreglo2];
 
- var_dump($params)
+var_dump($resultado);
+print_r($resultado);
 
-}
 
-
-suma_infinita(1,2,3)
+echo "\n";
